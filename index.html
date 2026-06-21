@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanh Vo Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Thanh điều hướng (Header & Navigation) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2 class="profile_name">KHANH VO</h2>
+            </div>
+            <ul>
+                <li><a href="#home" title="Home"><i class="fas fa-home"></i></a></li>
+                <li><a href="#home">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project Details</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Khu vực Giới thiệu bản thân (Gộp Ảnh và Chữ nằm cạnh nhau hàng ngang) -->
+    <section id="home">
+        <div class="about-container">
+            <!-- Ảnh profile của bạn -->
+            <img src="myphoto.jpg" alt="Khanh Vo Profile Image" class="profile_img">
+            
+            <div id="about" class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I am <strong>Khanh Vo</strong>. I am a software engineering student specializing in building responsive, modern web applications. I love turning complex logic into simple, beautiful, and interactive user interfaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Khu vực Kỹ năng -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- 4. Khu vực Dự án -->
+    <section id="projects">
+        <h2>Project Details</h2>
+        <div class="project-card">
+            <h3>E-Commerce Platform</h3>
+            <p>Built a fully responsive front-end application interface featuring interactive product filtering, shopping cart mechanics, and localized user authentication.</p>
+        </div>
+        <div class="project-card">
+            <h3>Task Manager Dashboard</h3>
+            <p>A specialized management utility that automates task statuses using an elegant Kanban board layout with pure JavaScript data arrays.</p>
+        </div>
+        <div class="project-card">
+            <h3>Weather Forecast Web App</h3>
+            <p>Developed an interactive application that fetches live global meteorological data using RESTful APIs, rendering dynamic condition animations based on local time zones.</p>
+        </div>
+    </section>
+
+    <!-- 5. Khu vực Lời giới thiệu & Form nhập liệu -->
+    <section id="recommendations" class="recommendation">
+        <h2>Recommendations</h2>
+        
+        <div id="recommendationContainer">
+            <div class="recommendation-card">
+                <p>"Khanh Vo is an exceptionally structured developer. Creative attention to modular code, clean DOM manipulation, and semantic layouts made them an absolute asset."</p>
+                <h4>- Alex Smith, Lead Software Architect</h4>
+            </div>
+            <div class="recommendation-card">
+                <p>"Outstanding eye for responsive design. Solved critical CSS layout bottlenecks across desktop and mobile form factors instantly."</p>
+                <h4>- Sarah Jenkins, Senior Front-end Developer</h4>
+            </div>
+            <div class="recommendation-card">
+                <p>"Demonstrated excellent problem-solving skills and technical discipline during our systems integration sprint. A team player who delivers optimized code under tight deadlines."</p>
+                <h4>- Michael Chang, Project Manager</h4>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="form-container" style="margin-top: 40px; background: #fff; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
+            <h3>Leave a Recommendation</h3>
+            <form id="recommendationForm">
+                <div style="margin-bottom: 15px;">
+                    <input type="text" id="recommendationName" placeholder="Your Name" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <textarea id="recommendationText" rows="4" placeholder="Your Message" required style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit;"></textarea>
+                </div>
+                <button type="submit" style="background-color: #38bdf8; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Chân Trang -->
+    <footer>
+        <p>&copy; 2026 Khanh Vo. Built for Academic Portfolio Requirements.</p>
+    </footer>
+
+    <!-- Gọi file Script xử lý Popup và Form -->
+    <script src="script.js"></script>
+</body>
+</html>
